@@ -5,7 +5,7 @@ def load_forecast():
     try:
         return pd.read_json("forecast_output.json")
     except Exception:
-        dates = pd.date_range("2017-09-08", periods=14)
+        dates = pd.date_range("2025-05-25", periods=14)
         return pd.DataFrame({"ds": dates, "yhat": [150, 160, 170, 140, 130, 125, 155, 165, 180, 175, 160, 150, 140, 135]})
 
 def load_events():
@@ -18,7 +18,7 @@ def load_sentiment():
     try:
         return pd.read_csv("sentiment.csv")
     except Exception:
-        dates = pd.date_range("2017-09-08", periods=14)
+        dates = pd.date_range("2025-05-25", periods=14)
         return pd.DataFrame({"date": dates, "sentiment_score": [0.1, 0.2, -0.1, 0, 0.05, -0.2, 0.3, 0.1, -0.05, 0, 0.15, 0.2, 0.1, 0]})
 
 # Global hotel data and state

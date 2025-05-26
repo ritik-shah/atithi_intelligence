@@ -114,7 +114,7 @@ def upsert_strategy_log(strategy_data):
 
 
 # ✅ Main logic runner
-def run_mcp(target_date: date = date(2017, 9, 8)):
+def run_mcp(target_date: date = date(2025, 5, 25)):
     print(f"\n🚦 MCP started for {target_date.isoformat()}")
 
     # Step 1: Get event actions early
@@ -275,3 +275,11 @@ def run_mcp(target_date: date = date(2017, 9, 8)):
 
 
     print("✅ MCP finished. Summary:", summary)
+    return {
+        "summary": summary,
+        "pricing_changes": price_changes,
+        "staffing_changes": staffing_actions,
+        "event_flags": event_actions,
+        "strategy_log": latest_strategy,
+        "occupancy_forecast": occupancy_forecast
+    }

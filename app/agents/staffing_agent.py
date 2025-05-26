@@ -31,7 +31,7 @@ Respond ONLY with a JSON array (no extra text, no explanation), exactly like:
 [
   {{
     "type": "adjust_staffing",
-    "date": "2017-09-10",
+    "date": "2025-05-25",
     "staff_count": 22,
     "note": "Increase due to demand"
   }}

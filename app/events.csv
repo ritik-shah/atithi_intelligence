@@ -1,6 +1,171 @@
 date,event,impact
-2017-08-31,Startup Expo,medium
-2017-09-02,Food Festival,high
-2017-09-05,Tourism Summit,medium
-2017-09-09,Sports Final,high
-2017-09-11,Music Concert,high
+2024-09-15,Comedy Showcase at Ulsoor Lake,high
+2024-09-17,Innovation Meetup in HSR Layout,low
+2024-09-18,Dance Festival in MG Road,medium
+2024-09-19,Music Drive near Bangalore Palace,high
+2024-09-24,Music Exhibit near Bangalore Palace,high
+2024-09-27,Wellness Drive near Bangalore Palace,high
+2024-10-01,Food Night at Cubbon Park,low
+2024-10-02,Gandhi Jayanti,high
+2024-10-05,Nature Fair in Electronic City,medium
+2024-10-09,Food Marathon at Cubbon Park,medium
+2024-10-11,Dussehra,high
+2024-10-12,Art Expo near Bangalore Palace,medium
+2024-10-13,Book Exhibit in MG Road,low
+2024-10-14,Book Fair at Whitefield,medium
+2024-10-16,Tech Rally in Indiranagar,high
+2024-10-25,Film Drive near Bangalore Palace,high
+2024-10-27,Comedy Celebration at the Namma Metro Station,low
+2024-10-31,Wine Celebration at Lalbagh,medium
+2024-11-01,Karnataka Rajyotsava,high
+2024-11-02,Wellness Drive near Bangalore Palace,medium
+2024-11-04,Dance Gala in Indiranagar,medium
+2024-11-06,Film Showcase at Cubbon Park,low
+2024-11-10,Tech Meetup at the Namma Metro Station,low
+2024-11-11,Art Celebration in MG Road,medium
+2024-11-12,Diwali,high
+2024-11-25,Wine Meetup in Indiranagar,high
+2024-11-26,Wine Meetup in Koramangala,low
+2024-11-27,Dance Fair in Electronic City,medium
+2024-11-28,Music Festival in Koramangala,low
+2024-12-03,Music Night in Indiranagar,high
+2024-12-04,Nature Ceremony in HSR Layout,low
+2024-12-05,Tech Festival at Ulsoor Lake,high
+2024-12-16,Cultural Expo in Indiranagar,low
+2024-12-17,Innovation Ceremony at Ulsoor Lake,low
+2024-12-20,Book Exhibit at the Namma Metro Station,low
+2024-12-22,Dance Fair in Koramangala,low
+2024-12-23,Tech Tournament at the Namma Metro Station,low
+2024-12-24,History Conference near Bangalore Palace,low
+2024-12-25,Christmas Day,high
+2024-12-29,Cultural Ceremony at Ulsoor Lake,medium
+2024-12-31,Nature Tournament in HSR Layout,low
+2025-01-01,Food Parade in Koramangala,medium
+2025-01-05,Art Celebration at the Namma Metro Station,medium
+2025-01-10,Art Meetup in Koramangala,low
+2025-01-13,Book Meetup at the Namma Metro Station,low
+2025-01-15,Craft Showcase at Lalbagh,medium
+2025-01-24,Cultural Showcase at the Namma Metro Station,medium
+2025-01-26,Republic Day,high
+2025-02-01,Book Exhibit in Indiranagar,high
+2025-02-04,Music Drive at Jayanagar,medium
+2025-02-07,Book Conference in Indiranagar,low
+2025-02-09,Wine Gala at Jayanagar,low
+2025-02-12,History Celebration at Ulsoor Lake,high
+2025-02-13,Cultural Festival in MG Road,medium
+2025-02-18,Book Conference in Electronic City,low
+2025-02-19,Tech Marathon at the Namma Metro Station,medium
+2025-02-20,History Gala in MG Road,high
+2025-02-25,Community Parade in MG Road,low
+2025-02-28,Music Tournament at Ulsoor Lake,low
+2025-03-01,Wine Drive at Ulsoor Lake,high
+2025-03-02,Wellness Exhibit at the Namma Metro Station,high
+2025-03-04,Food Rally in HSR Layout,low
+2025-03-05,Innovation Exhibit at Cubbon Park,high
+2025-03-07,Maha Shivaratri,high
+2025-03-11,Comedy Exhibit in MG Road,low
+2025-03-14,Wellness Expo in HSR Layout,medium
+2025-03-18,Music Meetup at Ulsoor Lake,high
+2025-03-20,History Market near Bangalore Palace,medium
+2025-03-24,History Celebration in Koramangala,medium
+2025-03-27,Book Festival in HSR Layout,low
+2025-03-30,Music Night at Lalbagh,high
+2025-04-01,School Summer Vacation,medium
+2025-04-02,School Summer Vacation,medium
+2025-04-03,School Summer Vacation,medium
+2025-04-04,School Summer Vacation,medium
+2025-04-05,School Summer Vacation,medium
+2025-04-06,School Summer Vacation,medium
+2025-04-07,School Summer Vacation,medium
+2025-04-08,School Summer Vacation,medium
+2025-04-09,School Summer Vacation,medium
+2025-04-10,School Summer Vacation,medium
+2025-04-11,School Summer Vacation,medium
+2025-04-12,School Summer Vacation,medium
+2025-04-13,School Summer Vacation,medium
+2025-04-14,School Summer Vacation,medium
+2025-04-15,School Summer Vacation,medium
+2025-04-16,School Summer Vacation,medium
+2025-04-17,School Summer Vacation,medium
+2025-04-18,School Summer Vacation,medium
+2025-04-19,School Summer Vacation,medium
+2025-04-20,School Summer Vacation,medium
+2025-04-21,School Summer Vacation,medium
+2025-04-22,School Summer Vacation,medium
+2025-04-23,School Summer Vacation,medium
+2025-04-24,School Summer Vacation,medium
+2025-04-25,School Summer Vacation,medium
+2025-04-26,School Summer Vacation,medium
+2025-04-27,School Summer Vacation,medium
+2025-04-28,School Summer Vacation,medium
+2025-04-29,School Summer Vacation,medium
+2025-04-30,School Summer Vacation,medium
+2025-05-01,School Summer Vacation,medium
+2025-05-02,School Summer Vacation,medium
+2025-05-03,School Summer Vacation,medium
+2025-05-04,School Summer Vacation,medium
+2025-05-05,School Summer Vacation,medium
+2025-05-06,School Summer Vacation,medium
+2025-05-07,School Summer Vacation,medium
+2025-05-08,School Summer Vacation,medium
+2025-05-09,School Summer Vacation,medium
+2025-05-10,School Summer Vacation,medium
+2025-05-11,School Summer Vacation,medium
+2025-05-12,School Summer Vacation,medium
+2025-05-13,School Summer Vacation,medium
+2025-05-14,School Summer Vacation,medium
+2025-05-15,School Summer Vacation,medium
+2025-05-16,School Summer Vacation,medium
+2025-05-17,School Summer Vacation,medium
+2025-05-18,School Summer Vacation,medium
+2025-05-19,School Summer Vacation,medium
+2025-05-20,School Summer Vacation,medium
+2025-05-21,School Summer Vacation,medium
+2025-05-22,School Summer Vacation,medium
+2025-05-23,School Summer Vacation,medium
+2025-05-24,School Summer Vacation,medium
+2025-05-25,School Summer Vacation,medium
+2025-05-26,School Summer Vacation,medium
+2025-05-27,School Summer Vacation,medium
+2025-05-28,School Summer Vacation,medium
+2025-05-29,School Summer Vacation,medium
+2025-05-30,School Summer Vacation,medium
+2025-05-31,School Summer Vacation,medium
+2025-06-09,Tech Meetup at Lalbagh,high
+2025-06-10,Music Night in Indiranagar,high
+2025-06-15,Community Exhibit near Bangalore Palace,high
+2025-06-16,Nature Marathon at Lalbagh,low
+2025-06-17,Dance Showcase at Jayanagar,medium
+2025-06-18,Community Fair in Koramangala,medium
+2025-06-20,Film Celebration at Lalbagh,medium
+2025-06-22,Food Night at Cubbon Park,low
+2025-06-30,Art Gala near Bangalore Palace,high
+2025-07-05,Tech Expo at Lalbagh,high
+2025-07-07,Community Ceremony at Whitefield,medium
+2025-07-09,Film Market at the Namma Metro Station,medium
+2025-07-11,Book Fair near Bangalore Palace,low
+2025-07-16,Cultural Conference at Cubbon Park,high
+2025-07-18,Innovation Conference in MG Road,medium
+2025-07-19,Cultural Ceremony near Bangalore Palace,medium
+2025-07-20,Nature Drive in Koramangala,medium
+2025-07-24,Dance Parade in MG Road,high
+2025-07-27,Community Night at Whitefield,medium
+2025-07-29,Tech Fair in Indiranagar,low
+2025-08-01,Nature Festival in Koramangala,low
+2025-08-02,Art Showcase at Whitefield,medium
+2025-08-05,Tech Marathon at Ulsoor Lake,high
+2025-08-13,Innovation Drive at Cubbon Park,medium
+2025-08-15,Independence Day,high
+2025-08-16,Wine Fair in Electronic City,medium
+2025-08-19,Nature Meetup in Indiranagar,medium
+2025-08-20,Book Exhibit in MG Road,medium
+2025-08-26,Wine Meetup at Cubbon Park,medium
+2025-08-28,Film Celebration in Indiranagar,low
+2025-08-29,Comedy Ceremony in HSR Layout,high
+2025-08-30,Film Meetup in MG Road,high
+2025-08-31,Food Drive at Lalbagh,medium
+2025-09-01,Tech Festival in Electronic City,medium
+2025-09-06,Ganesha Chaturthi,high
+2025-09-08,Book Meetup in HSR Layout,high
+2025-09-10,Wine Market in Koramangala,low
+2025-09-13,Innovation Festival in Electronic City,medium

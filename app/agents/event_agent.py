@@ -15,7 +15,7 @@ Respond ONLY with JSON array of:
 [
   {{
     "type": "flag_day",
-    "date": "2017-09-12",
+    "date": "2025-05-25",
     "note": "Local festival"
   }},
   ...

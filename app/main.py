@@ -5,13 +5,16 @@ from app.data import latest_strategy, forecast, events, sentiment
 from app.llm import ask_llm
 from app.mcp import run_mcp
 from apscheduler.schedulers.background import BackgroundScheduler
-
+from fastapi.responses import JSONResponse
 from supabase import create_client
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel
 import os
 import json
-
+import httpx
+from fastapi import Body
+from pydantic import BaseModel
+from .forecast_module import run_forecast_analysis 
 app = FastAPI()
 
 app.add_middleware(
@@ -150,8 +153,18 @@ def get_event_flags(
     query = query.order("date", desc=True)
     data = check_error(query.execute())
     return data
-
-
+import pandas as pd
+@app.get("/run-forecast")
+def run_forecast():
+    result = run_forecast_analysis()
+    # Just in case, ensure no pandas Timestamp objects remain
+    for row in result:
+        if isinstance(row, dict):
+            for k, v in row.items():
+                # Defensive: if any pandas Timestamp slipped through, convert it here
+                if isinstance(v, pd.Timestamp):
+                    row[k] = v.isoformat()
+    return result
 
 @app.get("/supabase/staffing_log", response_model=List[StaffingLog])
 def get_staffing_log(
@@ -196,7 +209,83 @@ async def get_strategy_log():
 
     return data
 
+# class NotificationInput(BaseModel):
+#     token: str
+#     title: str = "Test Notification"
+#     body: str = "hi"
+# @app.post("/send-notification")
+# async def send_notification(input: NotificationInput):
+#     fcm_url = "https://fcm.googleapis.com/fcm/send"
+#     headers = {
+#         "Authorization": f"key={os.getenv('FCM_SERVER_KEY')}",
+#         "Content-Type": "application/json",
+#     }
+#     payload = {
+#         "to": input.token,
+#         "notification": {
+#             "title": input.title,
+#             "body": input.body,
+#         }
+#     }
+
+#     async with httpx.AsyncClient() as client:
+#         response = await client.post(fcm_url, json=payload, headers=headers)
+
+#     if response.status_code != 200:
+#         raise HTTPException(status_code=500, detail=f"FCM error: {response.text}")
+    
+#     return {"message": "Notification sent", "details": response.json()}
+
+
+
+def format_mcp_output(price_changes, staffing_actions, event_actions):
+    output = "📌 MODEL-DRIVEN CHANGES:\n"
+
+    if price_changes:
+        output += "\n💰 Pricing Changes:\n"
+        for pc in price_changes:
+            output += f"- [{pc['date']}] {pc['room_type']}: {pc['base_price']} ➝ {pc['new_price']} ({pc['change_pct']}%) — {pc['note']}\n"
+
+    if staffing_actions:
+        output += "\n👥 Staffing Changes:\n"
+        for sa in staffing_actions:
+            output += f"- [{sa['date']}] Staff on duty: {sa['staff_count']} — {sa['note']}\n"
+
+    if event_actions:
+        output += "\n📅 Event Flags:\n"
+        for ea in event_actions:
+            output += f"- [{ea['date']}] ⚠️ {ea['note']}\n"
+
+    return output
+
+# def safe_run_mcp():
+#     result = run_mcp()
+#     if not isinstance(result, dict):
+#         return {
+#             "price_changes": [],
+#             "staffing_actions": [],
+#             "event_actions": []
+#         }
+#     return result
+
+@app.get("/cron-simulator")
+def simulate_cron():
+    try:
+        result = run_mcp()
+        print(result)
+        price_changes = result.get("pricing_changes", [])
+        staffing_actions = result.get("staffing_changes", [])
+        event_actions = result.get("event_flags", [])
+
+        formatted_output = format_mcp_output(price_changes, staffing_actions, event_actions)
+
+        return {"message": formatted_output}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
 # Schedule MCP run every 1 hour
 scheduler = BackgroundScheduler()
-scheduler.add_job(run_mcp, "interval", hours=1)
+scheduler.add_job(run_mcp)
 scheduler.start()

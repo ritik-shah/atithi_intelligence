@@ -48,14 +48,14 @@ Respond ONLY with a valid JSON array — NO explanation, NO headings.
     "room_type": "Standard",
     "price": 1600,
     "note": "High weekend demand",
-    "date": "2017-09-09"
+    "date": "2025-05-25"
   }},
   {{
     "type": "update_price",
     "room_type": "Deluxe",
     "price": 1900,
     "note": "Low occupancy forecast",
-    "date": "2017-09-13"
+    "date": "2025-05-25"
   }}
 ]
 """

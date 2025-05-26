@@ -24,8 +24,8 @@ STAFF_TOTAL = 30
 STAFF_ON_DUTY = 20
 STAFF_OFF_DUTY = STAFF_TOTAL - STAFF_ON_DUTY
 
-START_DATE = datetime.strptime("2017-09-01", "%Y-%m-%d")
-DAYS = 14
+START_DATE = datetime.strptime("2025-05-25", "%Y-%m-%d")
+DAYS = 180
 
 def generate_pricing_data():
     pricing_data = []
